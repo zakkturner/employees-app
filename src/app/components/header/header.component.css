@@ -1,0 +1,19 @@
+.header {
+  background: #000;
+}
+.header__nav {
+  padding: 20px 0;
+  width: 80%;
+  margin: 0 auto;
+}
+.header__nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+.header__nav-list {
+  display: flex;
+}
+
+.header__nav-item {
+  margin-right: 20px;
+}

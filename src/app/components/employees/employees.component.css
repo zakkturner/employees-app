@@ -1,0 +1,37 @@
+.employee_grid-table {
+  display: grid;
+  grid-template-columns: 1fr;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.employee__grid-header,
+.employee__grid-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+
+  padding: 8px;
+}
+
+.employee__grid-header div,
+.employee__grid-row div {
+  padding: 8px;
+}
+
+.employee__grid-body {
+  display: block;
+}
+
+.employee__name {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  align-items: center;
+  gap: 8px;
+}
+
+.employee__image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}

@@ -1,5 +1,7 @@
 /* Css Reset */
-
+body {
+  overflow: hidden;
+}
 html,
 body,
 div,

@@ -4,13 +4,37 @@
   border-collapse: collapse;
   width: 100%;
 }
+.employee__search {
+  display: flex;
 
+  align-items: center;
+  margin-bottom: 15px;
+}
+.employee__input {
+  padding: 10px 2px;
+  margin-right: 5px;
+
+  font-size: 16px;
+}
+hr {
+  border: 1px solid #c9c9c9;
+}
+.employee__submit-btn {
+  background: #000;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  border: none;
+}
 .employee__grid-header,
 .employee__grid-row {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr 1fr;
 
   padding: 8px;
+}
+.employee__grid-sort {
+  cursor: pointer;
 }
 
 .employee__grid-header div,

@@ -1,11 +1,33 @@
 .header {
   background: #000;
   height: 100%;
-  width: 250px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header__user-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.header__user-img {
+  border-radius: 50%;
+}
+.header__username-container {
+  margin-top: 20px;
+}
+.header__username {
+  color: #fff;
 }
 .header__nav {
   padding: 20px 0;
   width: 80%;
+  height: 100%;
   margin: 0 auto;
 }
 .header__nav-link {
@@ -14,11 +36,28 @@
 }
 .header__nav-list {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: row;
+
   align-items: center;
 }
 
 .header__nav-item {
   margin-right: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    background: #000;
+    height: 100%;
+    width: 250px;
+    display: block;
+  }
+  .header__nav-list {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .header__nav-item {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
 }

@@ -1,5 +1,6 @@
 .app__container {
   display: flex;
+  flex-direction: column;
 }
 main {
   background: #f5f4fa;
@@ -8,4 +9,11 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-y: scroll;
+}
+@media screen and (min-width: 1024px) {
+  .app__container {
+    display: flex;
+    flex-direction: row;
+  }
 }

@@ -1,0 +1,62 @@
+.employee__detail-container {
+  padding: 25px 0;
+}
+
+.employee__detail-header {
+  display: flex;
+  align-items: center;
+}
+
+.employee__detail-image-container {
+  margin-right: 10px;
+}
+.employee__detail-image {
+  border-radius: 50px;
+}
+.employee__detail-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.employee__detail-text {
+  font-size: 14px;
+  font-style: italic;
+  margin-right: 5px;
+}
+.employee__detail-moreInfo-container span {
+  font-size: 14px;
+}
+.employee__hr {
+  border: 1px solid #c9c9c9;
+}
+.employee__detail-description {
+  max-width: 500px;
+  margin: 20px 0;
+  line-height: 1.2;
+}
+.employee__detail-description-title {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.employee_detail-btn-container {
+  margin-top: 30px;
+}
+.employee__detail-back-btn {
+  background: #000;
+  color: #fff;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  .employee__detail-description {
+    max-width: 800px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .employee__detail-description {
+    max-width: 1000px;
+  }
+}

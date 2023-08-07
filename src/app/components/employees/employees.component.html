@@ -1,9 +1,30 @@
 <div class="employee__grid-table">
+  <div class="employee__search">
+    <form>
+      <input
+        class="employee__input"
+        type="text"
+        placeholder="Enter Id"
+        name="id"
+        [formControl]="id"
+      />
+    </form>
+    <button class="employee__submit-btn" type="button" (click)="onSubmit()">
+      Search Id
+    </button>
+  </div>
+  <hr />
   <div class="employee__grid-header">
     <div>ID</div>
-    <div (click)="sortByEmployeeName()">Employee Name</div>
-    <div (click)="sortByEmployeeSalary()">Employee Salary</div>
-    <div (click)="sortByEmployeeAge()">Employee Age</div>
+    <div (click)="sortByEmployeeName()" class="employee__grid-sort">
+      Employee Name
+    </div>
+    <div (click)="sortByEmployeeSalary()" class="employee__grid-sort">
+      Employee Salary
+    </div>
+    <div (click)="sortByEmployeeAge()" class="employee__grid-sort">
+      Employee Age
+    </div>
   </div>
   <div class="employee__grid-body">
     <div class="employee__grid-row" *ngFor="let employee of employees">

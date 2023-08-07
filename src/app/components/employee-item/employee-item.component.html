@@ -1,0 +1,46 @@
+<div
+  class="employee__detail-container"
+  *ngIf="employee !== undefined; else notFound"
+>
+  <header class="employee__detail-header">
+    <div class="employee__detail-image-container">
+      <img
+        [src]="'https://i.pravatar.cc/100?img=' + employee.id"
+        alt=""
+        class="employee__detail-image"
+      />
+    </div>
+    <div class="employee__detail-info">
+      <h2 class="employee__detail-name">
+        {{ employee.employee_name }}
+      </h2>
+      <div class="employee__detail-moreInfo-container">
+        <span>Position: </span
+        ><small class="employee__detail-text">Lorem ipsum </small>
+        <span>Age: </span
+        ><small class="employee__detail-text">
+          {{ employee.employee_age }}
+        </small>
+        <span>Salary: </span
+        ><small class="employee__detail-text">
+          {{ employee.employee_salary }}
+        </small>
+      </div>
+    </div>
+  </header>
+  <hr class="employee__hr" />
+  <div class="employee__detail-description">
+    <h3 class="employee__detail-description-title">Employee Details:</h3>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum doloribus
+      voluptatem numquam esse quos repudiandae? Debitis deserunt sequi enim eos!
+      Ducimus fuga enim, amet nisi nam fugit iure debitis eligendi!
+    </p>
+  </div>
+  <div class="employee_detail-btn-container">
+    <a href="/" class="employee__detail-back-btn">Go Back</a>
+  </div>
+</div>
+<ng-template #notFound>
+  <h2>Sorry Employee Not Found!</h2>
+</ng-template>
